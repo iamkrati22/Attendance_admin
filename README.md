@@ -5,5 +5,10 @@ As College students, we all have seen how our Professors take attendance in clas
 
 ## How do we overcome this problem? 
 Seeing the issue that we mentioned above, we planned on creating a solution that could help teachers for a faster and much better mode of attendance than a primitive one. The solution we came to was an application, which can help students mark their attendance when inside the class, without any roll calls. This application can help make time usage of a lecture more efficient in classes.
-### Tech Stack
- * This Project uses many tech stacks 
+The Application uses Flutter Framework and Dart for building the application. We used the SharedPreferences Storage system for storing Key-Value pairs of data locally on the device. The major part of the project relies on the Nearby Connections API/Plugin, which is a very popular one for connecting devices and transferring data locally on a Peer to Peer network (small scale without any other issues). It has many examples use cases such as Offline File Transfer, Multi Screen Gaming etc.
+
+ ## The Solution
+ The Solution is an application that uses Nearby Connections API for creating a local network for transfer of data back on the network. It allows us to catch the enrollment numbers of all the students connected and sends it to the main Application (the Admin Application) where it can be used by the teacher later on for marking Student's Attendance. In this way, the teacher doesn't need to use 10 minutes of his class calling out each student's names; rather the teacher can just switch on this application and it collects all the data in a very fast manner.
+
+ The Nearby Connections API helps us to establish three major types of connections - [Peer to Peer Cluster](https://developers.google.com/nearby/connections/strategies#p2p_cluster), [Peer to Peer Star](https://developers.google.com/nearby/connections/strategies#p2p_star) and [Peer to Peer point to point](https://developers.google.com/nearby/connections/strategies#p2p_point_to_point). They form different types of Network Topologies, and can be used for different functionality. For our goal here, P2P Cluster is a great way to establish connections. 
+ 
